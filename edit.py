@@ -48,7 +48,7 @@ def call_api(year, month):
 
 # fetch admin count
 adminCount = 0
-url = 'https://xtools.wmflabs.org/api/project/admins_groups/zh.wikipedia'
+url = 'https://xtools.wmcloud.org/api/project/admin_groups/zh.wikipedia.org'
 data = requests.get(url).json()
 for user in data['users_and_groups'].values():
     if 'sysop' in user:
